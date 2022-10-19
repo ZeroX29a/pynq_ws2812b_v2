@@ -1,0 +1,182 @@
+{
+   "ActiveEmotionalView":"Reduced Jogs",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-373,-181",
+   "ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_Dout -pg 1 -lvl 5 -x 1040 -y 120 -defaultsOSRD
+preplace port port-id_r_e -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port port-id_b_e -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_g_e -pg 1 -lvl 0 -x 0 -y 580 -defaultsOSRD
+preplace port port-id_refresh_led -pg 1 -lvl 0 -x 0 -y 740 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace port port-id_enable -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 180 -y 180 -defaultsOSRD -pinDir GPIO_0 right -pinY GPIO_0 0R -pinDir GPIO_0.GPIO_O right -pinY GPIO_0.GPIO_O 20R -pinDir DDR right -pinY DDR 40R -pinDir FIXED_IO right -pinY FIXED_IO 60R -pinDir FCLK_CLK0 right -pinY FCLK_CLK0 80R -pinDir FCLK_RESET0_N right -pinY FCLK_RESET0_N 100R
+preplace inst lighting_v4_0 -pg 1 -lvl 4 -x 900 -y 120 -swap {1 2 0 5 6 3 4 7} -defaultsOSRD -pinBusDir data left -pinBusY data 100L -pinDir red_e left -pinY red_e 200L -pinDir blue_e left -pinY blue_e 0L -pinDir green_e left -pinY green_e 400L -pinDir refresh_led left -pinY refresh_led 560L -pinDir clk left -pinY clk 320L -pinDir enable left -pinY enable 340L -pinDir Dout right -pinY Dout 0R
+preplace inst Data -pg 1 -lvl 3 -x 670 -y 220 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst g_e -pg 1 -lvl 2 -x 450 -y 520 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst b_e -pg 1 -lvl 2 -x 450 -y 60 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst r_e -pg 1 -lvl 2 -x 450 -y 320 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst refresh_led -pg 1 -lvl 2 -x 450 -y 640 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 40R
+preplace inst OR_re -pg 1 -lvl 3 -x 670 -y 320 -defaultsOSRD -pinDir A left -pinY A 0L -pinDir B left -pinY B 60L -pinDir Y right -pinY Y 0R
+preplace inst OR_ge -pg 1 -lvl 3 -x 670 -y 520 -defaultsOSRD -pinDir A left -pinY A 0L -pinDir B left -pinY B 60L -pinDir Y right -pinY Y 0R
+preplace inst OR_be -pg 1 -lvl 3 -x 670 -y 60 -defaultsOSRD -pinDir A left -pinY A 0L -pinDir B left -pinY B 60L -pinDir Y right -pinY Y 60R
+preplace inst OR_rf -pg 1 -lvl 3 -x 670 -y 680 -defaultsOSRD -pinDir A left -pinY A 0L -pinDir B left -pinY B 60L -pinDir Y right -pinY Y 0R
+preplace netloc clk_1 1 0 4 NJ 440 NJ 440 NJ 440 NJ
+preplace netloc enable_1 1 0 4 NJ 460 NJ 460 NJ 460 NJ
+preplace netloc lighting_v4_0_Dout 1 4 1 N 120
+preplace netloc processing_system7_0_GPIO_O 1 1 2 340 220 NJ
+preplace netloc Data_Dout 1 3 1 NJ 220
+preplace netloc r_e_1 1 0 3 NJ 380 NJ 380 NJ
+preplace netloc OR_re_Y 1 3 1 N 320
+preplace netloc r_e_Dout 1 2 1 NJ 320
+preplace netloc g_e_1 1 0 3 NJ 580 NJ 580 NJ
+preplace netloc g_e_Dout 1 2 1 NJ 520
+preplace netloc OR_ge_Y 1 3 1 N 520
+preplace netloc b_e_1 1 0 3 NJ 120 NJ 120 NJ
+preplace netloc b_e_Dout 1 2 1 NJ 60
+preplace netloc refresh_led_1 1 0 3 NJ 740 NJ 740 NJ
+preplace netloc refresh_led_Dout 1 2 1 NJ 680
+preplace netloc OR_rf_Y 1 3 1 N 680
+preplace netloc OR_be_Y 1 3 1 N 120
+levelinfo -pg 1 0 180 450 670 900 1040
+pagesize -pg 1 -db -bbox -sgen -130 0 1130 800
+",
+   "Grouping and No Loops_ScaleFactor":"1.0",
+   "Grouping and No Loops_TopLeft":"-384,-101",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_Dout -pg 1 -lvl 5 -x 1040 -y 120 -defaultsOSRD
+preplace port port-id_r_e -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port port-id_b_e -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_g_e -pg 1 -lvl 0 -x 0 -y 580 -defaultsOSRD
+preplace port port-id_refresh_led -pg 1 -lvl 0 -x 0 -y 740 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace port port-id_enable -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 180 -y 180 -defaultsOSRD -pinDir GPIO_0 right -pinY GPIO_0 0R -pinDir GPIO_0.GPIO_O right -pinY GPIO_0.GPIO_O 20R -pinDir DDR right -pinY DDR 40R -pinDir FIXED_IO right -pinY FIXED_IO 60R -pinDir FCLK_CLK0 right -pinY FCLK_CLK0 80R -pinDir FCLK_RESET0_N right -pinY FCLK_RESET0_N 100R
+preplace inst lighting_v4_0 -pg 1 -lvl 4 -x 900 -y 120 -swap {1 2 0 5 6 3 4 7} -defaultsOSRD -pinBusDir data left -pinBusY data 100L -pinDir red_e left -pinY red_e 200L -pinDir blue_e left -pinY blue_e 0L -pinDir green_e left -pinY green_e 400L -pinDir refresh_led left -pinY refresh_led 560L -pinDir clk left -pinY clk 320L -pinDir enable left -pinY enable 340L -pinDir Dout right -pinY Dout 0R
+preplace inst Data -pg 1 -lvl 3 -x 670 -y 220 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst g_e -pg 1 -lvl 2 -x 450 -y 520 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst b_e -pg 1 -lvl 2 -x 450 -y 60 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst r_e -pg 1 -lvl 2 -x 450 -y 320 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst refresh_led -pg 1 -lvl 2 -x 450 -y 640 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 40R
+preplace inst OR_re -pg 1 -lvl 3 -x 670 -y 320 -defaultsOSRD -pinDir A left -pinY A 0L -pinDir B left -pinY B 60L -pinDir Y right -pinY Y 0R
+preplace inst OR_ge -pg 1 -lvl 3 -x 670 -y 520 -defaultsOSRD -pinDir A left -pinY A 0L -pinDir B left -pinY B 60L -pinDir Y right -pinY Y 0R
+preplace inst OR_be -pg 1 -lvl 3 -x 670 -y 60 -defaultsOSRD -pinDir A left -pinY A 0L -pinDir B left -pinY B 60L -pinDir Y right -pinY Y 60R
+preplace inst OR_rf -pg 1 -lvl 3 -x 670 -y 680 -defaultsOSRD -pinDir A left -pinY A 0L -pinDir B left -pinY B 60L -pinDir Y right -pinY Y 0R
+preplace netloc clk_1 1 0 4 NJ 440 NJ 440 NJ 440 NJ
+preplace netloc enable_1 1 0 4 NJ 460 NJ 460 NJ 460 NJ
+preplace netloc lighting_v4_0_Dout 1 4 1 N 120
+preplace netloc processing_system7_0_GPIO_O 1 1 2 340 220 NJ
+preplace netloc Data_Dout 1 3 1 NJ 220
+preplace netloc r_e_1 1 0 3 NJ 380 NJ 380 NJ
+preplace netloc OR_re_Y 1 3 1 N 320
+preplace netloc r_e_Dout 1 2 1 NJ 320
+preplace netloc g_e_1 1 0 3 NJ 580 NJ 580 NJ
+preplace netloc g_e_Dout 1 2 1 NJ 520
+preplace netloc OR_ge_Y 1 3 1 N 520
+preplace netloc b_e_1 1 0 3 NJ 120 NJ 120 NJ
+preplace netloc b_e_Dout 1 2 1 NJ 60
+preplace netloc refresh_led_1 1 0 3 NJ 740 NJ 740 NJ
+preplace netloc refresh_led_Dout 1 2 1 NJ 680
+preplace netloc OR_rf_Y 1 3 1 N 680
+preplace netloc OR_be_Y 1 3 1 N 120
+levelinfo -pg 1 0 180 450 670 900 1040
+pagesize -pg 1 -db -bbox -sgen -130 0 1130 800
+",
+   "No Loops_ScaleFactor":"1.0",
+   "No Loops_TopLeft":"-384,-101",
+   "Reduced Jogs_ExpandedHierarchyInLayout":"",
+   "Reduced Jogs_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1060 -y 100 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1060 -y 120 -defaultsOSRD
+preplace port port-id_Dout -pg 1 -lvl 5 -x 1060 -y 180 -defaultsOSRD
+preplace port port-id_r_e -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace port port-id_b_e -pg 1 -lvl 0 -x 0 -y 500 -defaultsOSRD
+preplace port port-id_g_e -pg 1 -lvl 0 -x 0 -y 660 -defaultsOSRD
+preplace port port-id_refresh_led -pg 1 -lvl 0 -x 0 -y 820 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 4 -x 830 -y 920 -defaultsOSRD -bot
+preplace port port-id_enable -pg 1 -lvl 4 -x 850 -y 920 -defaultsOSRD -bot
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 180 -y 60 -defaultsOSRD -pinY GPIO_0 0R -pinY GPIO_0.GPIO_O 20R -pinY DDR 40R -pinY FIXED_IO 60R -pinY FCLK_RESET0_N 80R
+preplace inst lighting_v4_0 -pg 1 -lvl 4 -x 920 -y 180 -defaultsOSRD -pinBusY data 0L -pinY red_e 100L -pinY blue_e 260L -pinY green_e 420L -pinY refresh_led 580L -pinY clk 600L -pinY enable 620L -pinY Dout 0R
+preplace inst Data -pg 1 -lvl 3 -x 670 -y 180 -defaultsOSRD -pinBusY Din 0L -pinBusY Dout 0R
+preplace inst g_e -pg 1 -lvl 2 -x 450 -y 600 -defaultsOSRD -pinBusY Din 0L -pinBusY Dout 0R
+preplace inst b_e -pg 1 -lvl 2 -x 450 -y 440 -defaultsOSRD -pinBusY Din 0L -pinBusY Dout 0R
+preplace inst r_e -pg 1 -lvl 2 -x 450 -y 280 -defaultsOSRD -pinBusY Din 0L -pinBusY Dout 0R
+preplace inst refresh_led -pg 1 -lvl 2 -x 450 -y 720 -defaultsOSRD -pinBusY Din 0L -pinBusY Dout 40R
+preplace inst OR_re -pg 1 -lvl 3 -x 670 -y 280 -defaultsOSRD -pinY Internal 0L -pinY External 60L -pinY Y 0R
+preplace inst OR_ge -pg 1 -lvl 3 -x 670 -y 600 -defaultsOSRD -pinY Internal 0L -pinY External 60L -pinY Y 0R
+preplace inst OR_be -pg 1 -lvl 3 -x 670 -y 440 -defaultsOSRD -pinY Internal 0L -pinY External 60L -pinY Y 0R
+preplace inst OR_rf -pg 1 -lvl 3 -x 670 -y 760 -defaultsOSRD -pinY Internal 0L -pinY External 60L -pinY Y 0R
+preplace netloc clk_1 1 3 1 780J 780n
+preplace netloc enable_1 1 3 1 800J 800n
+preplace netloc lighting_v4_0_Dout 1 4 1 N 180
+preplace netloc processing_system7_0_GPIO_O 1 1 2 340 180 NJ
+preplace netloc Data_Dout 1 3 1 NJ 180
+preplace netloc r_e_1 1 0 3 N 340 N 340 N
+preplace netloc OR_re_Y 1 3 1 N 280
+preplace netloc r_e_Dout 1 2 1 NJ 280
+preplace netloc g_e_1 1 0 3 NJ 660 N 660 N
+preplace netloc g_e_Dout 1 2 1 NJ 600
+preplace netloc OR_ge_Y 1 3 1 N 600
+preplace netloc b_e_1 1 0 3 NJ 500 N 500 N
+preplace netloc b_e_Dout 1 2 1 NJ 440
+preplace netloc refresh_led_1 1 0 3 NJ 820 N 820 N
+preplace netloc refresh_led_Dout 1 2 1 NJ 760
+preplace netloc OR_rf_Y 1 3 1 N 760
+preplace netloc OR_be_Y 1 3 1 N 440
+preplace netloc processing_system7_0_DDR 1 1 4 NJ 100 NJ 100 NJ 100 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ 120 NJ 120 NJ 120 NJ
+levelinfo -pg 1 0 180 450 670 920 1060
+pagesize -pg 1 -db -bbox -sgen -130 0 1180 1020
+",
+   "Reduced Jogs_ScaleFactor":"1.0",
+   "Reduced Jogs_TopLeft":"-358,-4",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_Dout -pg 1 -lvl 5 -x 1060 -y 360 -defaultsOSRD
+preplace port port-id_r_e -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace port port-id_b_e -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_g_e -pg 1 -lvl 0 -x 0 -y 500 -defaultsOSRD
+preplace port port-id_refresh_led -pg 1 -lvl 0 -x 0 -y 620 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace port port-id_enable -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 180 -y 230 -defaultsOSRD
+preplace inst lighting_v4_0 -pg 1 -lvl 4 -x 920 -y 360 -swap {1 2 0 5 6 3 4 7} -defaultsOSRD
+preplace inst Data -pg 1 -lvl 3 -x 670 -y 180 -defaultsOSRD
+preplace inst g_e -pg 1 -lvl 2 -x 450 -y 440 -defaultsOSRD
+preplace inst b_e -pg 1 -lvl 2 -x 450 -y 60 -defaultsOSRD
+preplace inst r_e -pg 1 -lvl 2 -x 450 -y 280 -defaultsOSRD
+preplace inst refresh_led -pg 1 -lvl 2 -x 450 -y 560 -defaultsOSRD
+preplace inst OR_re -pg 1 -lvl 3 -x 670 -y 290 -defaultsOSRD
+preplace inst OR_ge -pg 1 -lvl 3 -x 670 -y 450 -defaultsOSRD
+preplace inst OR_be -pg 1 -lvl 3 -x 670 -y 70 -defaultsOSRD
+preplace inst OR_rf -pg 1 -lvl 3 -x 670 -y 570 -defaultsOSRD
+preplace netloc clk_1 1 0 4 NJ 360 NJ 360 NJ 360 NJ
+preplace netloc enable_1 1 0 4 NJ 380 NJ 380 NJ 380 NJ
+preplace netloc lighting_v4_0_Dout 1 4 1 N 360
+preplace netloc processing_system7_0_GPIO_O 1 1 2 340 180 NJ
+preplace netloc Data_Dout 1 3 1 790J 180n
+preplace netloc r_e_1 1 0 3 NJ 340 NJ 340 560J
+preplace netloc OR_re_Y 1 3 1 780 290n
+preplace netloc r_e_Dout 1 2 1 NJ 280
+preplace netloc g_e_1 1 0 3 NJ 500 NJ 500 560J
+preplace netloc g_e_Dout 1 2 1 NJ 440
+preplace netloc OR_ge_Y 1 3 1 780 400n
+preplace netloc b_e_1 1 0 3 NJ 120 NJ 120 560J
+preplace netloc b_e_Dout 1 2 1 NJ 60
+preplace netloc refresh_led_1 1 0 3 NJ 620 NJ 620 560J
+preplace netloc refresh_led_Dout 1 2 1 NJ 560
+preplace netloc OR_rf_Y 1 3 1 800 420n
+preplace netloc OR_be_Y 1 3 1 800 70n
+levelinfo -pg 1 0 180 450 670 920 1060
+pagesize -pg 1 -db -bbox -sgen -130 0 1150 640
+"
+}
+{
+   "da_ps7_cnt":"1"
+}
