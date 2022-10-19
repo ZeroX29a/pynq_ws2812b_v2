@@ -25,7 +25,7 @@ An ic with higher pin count is hard to manage, synthesize and program.
 * blue_e -> 10
 * refresh_led -> 11
 
-## Useage
+## Usage
 
 The data is fed into the data pin and the the x_e is toggled from [1 -> 0 -> 1 -> 0] casusing the data to be absorbed into x_v.
 The implemented design has OR module to accept from both external and internal triggering.
