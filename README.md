@@ -41,6 +41,6 @@ circular ws2812b ring consisting of 24 LEDs
 
 Demo is given Below.
 
-![demo](output.mp4)
+![demo](output.gif)
 
 Source is [pynq_ws2812b_v1](https://github.com/ZeroX29a/pynq_ws2812b_v1)
