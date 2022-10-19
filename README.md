@@ -1,4 +1,4 @@
-# WS2812b or Neopixel Driver for PYNQ-Z2 V2
+# WS2812b or Neopixel Driver for PYNQ-Z2 V2 [Issues Present]
 
 ## An implementation of NeoPxl driver
 
@@ -6,6 +6,9 @@ Finally a dynamic controller which is easy to implement and use. with lesser IO 
 An ic with higher pin count is hard to manage, synthesize and program.
 
 ![schmatics](img.png)
+
+Issues Deteccted on WS2812b Led drivers. while testing there seems to have some discrepancies with the lighting. They generally remain in the range of acceptable error, ie x value will only produce x color, the issue is in the brightness which seems to be messed up. These will be updated when i get back to it.
+
 
 ## External Pin Layout
 
