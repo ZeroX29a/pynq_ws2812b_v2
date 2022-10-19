@@ -60,6 +60,9 @@ architecture Behavioral of lighting_v4 is
     signal write_addr: integer := 0;         -- Store address to write data to in double buffer
 begin
 
+
+-- when the refresh_led is toggled the absorbed values are accepted into the color
+
     process(refresh_led)
     begin
         color <= red_v&blue_v&green_v;
@@ -89,7 +92,7 @@ begin
 
 
 
-    -- the x_e signal is made to go from [0 -> 1 -> 0]  while keeping the value in data
+    -- the x_e signal is made to go from [1 -> 0 -> 1 -> 0]  while keeping the value in data
     -- while the x_e is 1 then the data is copied to x_v 
 
 
